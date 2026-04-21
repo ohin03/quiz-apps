@@ -3,100 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>ISAD Professional Quiz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     
-    
     <div class="MyQuizApp">
         <div class="img">
-              <img src="head.png.svg" alt="load">
+            <img src="head.png.svg" alt="ISAD Quiz">
         </div>
         <div class="text1">
-            <h3>Quiz app with fixed time</h3>
-            <p>This quiz app helps you to understand programming language, and it will make you a beginner to mid level programmer. So, please stay with us for your programming journey.</p>
-            <h3>Learn about</h3>
-            <p>programming language, set your goals and can earn money by this. </p>
+            <h3>ISAD Exam Portal</h3>
+            <p>সিস্টেম অ্যানালাইসিস এবং ডিজাইনের ওপর আপনার দক্ষতা যাচাই করুন। এই কুইজটি আপনাকে প্রফেশনাল লেভেলের কনসেপ্ট বুঝতে সাহায্য করবে।</p>
+            <h3>Developed by:</h3>
+            <p>Name: Nusrat Jahan </p>
+            <p>Id: 241031009 </p>
         </div>
         <div class="myBtn">
-            <button>Start quiz</button>
+            <button>Start Quiz</button>
         </div>
     </div>
 
-
-     
     <div class="RulesBox">
-         <div class="RulesTittle">Some rules of this quiz</div>
+         <div class="RulesTittle">পরীক্ষার নিয়মাবলী</div>
          <div class="RulesList">
             <ol>
-                <li>You have only <span style="color: blue;">15 seconds</span> per each question</li>
-                <li>Once you select your answer, it cannot be undone.</li>
-                <li>You cannot select any option once time goes off.</li>
-                <li>You cannot exit from the quiz while you are playing.</li>
-                <li>You will get points on the basis of your correct answers.</li>
+                <li>প্রতিটি প্রশ্নের জন্য আপনি <span style="color: #007bff; font-weight: bold;">১৫ সেকেন্ড</span> সময় পাবেন।</li>
+                <li>একবার উত্তর সিলেক্ট করলে তা পরিবর্তন করা যাবে না।</li>
+                <li>সময় শেষ হয়ে গেলে কোনো অপশন সিলেক্ট করা যাবে না।</li>
+                <li>পরীক্ষা চলাকালীন ট্যাব বা উইন্ডো ক্লোজ করবেন না।</li>
+                <li>সঠিক উত্তরের ওপর ভিত্তি করে আপনার স্কোর প্রদান করা হবে।</li>
             </ol>
          </div>
          <div class="buttons">
-            <button class="ExitButton">Exit quiz</button>
+            <button class="ExitButton">Exit Quiz</button>
             <button class="ContinueButton">Continue</button>
          </div>
     </div>
 
     <div class="Questions">
         <header class="QuestionHeader">
-            <div class="title">Start Exam</div>
+            <div class="title">ISAD Quiz</div>
             <div class="TimeCount">
-                <div class="Time">Time left</div>
+                <div class="Time">Time Left</div>
                 <div class="Seconds">15</div>
             </div>
             <div class="time-lines"></div>
         </header> 
         <div class="Section">
-            <div class="text"><!--<span>1. What does HTML stand for.?</span>--></div>
+            <div class="text"></div>
             <div class="MyOptions">
-                <div class="options"><!--<span>Hyper text processor</span>
-                <i class="fa-solid fa-xmark"></i>--></div>
-                <div class="options"><!--<span>Hyper text markup language</span>
-                <i class="fa-solid fa-check"></i>--></div>
-                <div class="options"><!--<span>Hyper text processor data</span>
-                <i class="fa-solid fa-xmark"></i>--></div>
-                <div class="options"><!--<span>Hyper tool multiple language</span>
-                <i class="fa-solid fa-xmark"></i>--></div>
-            </div>
+                </div>
         </div>
     
         <footer>
-            <div class="total_que">
-               <!-- <p>1 of 5 questions</p>-->
-            </div>
-            <button class="nextBtn">Next question</button>
+            <div class="total_que"></div>
+            <button class="nextBtn">Next Question</button>
         </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="resultImg">
+            <img src="winner.png" alt="Result">
         </div>
-
- 
-        <div class="result_box">
-            <div class="resultImg">
-                <img src="winner.png" alt="">
+        <div class="complete_text">আপনি পরীক্ষা সম্পন্ন করেছেন!</div>
+        <div class="score_text">
             </div>
-            <div class="complete_text">You have fimished this exam</div>
-            <div class="score_text">
-                <span>Carry on you got <p>0</p> out of 5</span>
-            </div>
-            <div class="buttons">
-                <button class="restart1">Replay</button>
-                <button class="quit">Quit Quiz</button>
-            </div>
+        <div class="buttons">
+            <button class="restart1">Replay</button>
+            <button class="quit">Quit Quiz</button>
         </div>
-    
+    </div>
 
-   <!-- <div class="tick icon"><i class="fa-solid fa-check"></i></div>
-    <div class="cross icon"><i class="fa-solid fa-xmark"></i></div>-->
-
-
-
-<script src="js/script.js"></script>
-<script src="js/qustions.js"></script>
+    <script src="js/qustions.js"></script>
+    <script src="js/script.js"></script>
 </body>
-</html> 
+</html>

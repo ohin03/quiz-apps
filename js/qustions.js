@@ -1,58 +1,57 @@
-let qustions=[
+let qustions = [
     {
-        numb:1,
-        qustions:`What does HTML stand for?`,
-        answer:`Hyper text markup language`,
-        options:[
-            "Hyper text processor",
-            "Hyper text markup language",
-            "Hyper text processor data",
-            "Hyper tool multiple language"
-        ]
-    },
-        {
-        numb:2,
-        qustions:`What does CSS stand for?`,
-        answer:`Cascading style sheet`,
-        options:[
-            "Common style sheet",
-            "Colorful style sheet",
-            "Computer style sheet",
-            "Cascading style sheet"
+        numb: 1,
+        qustions: "সিস্টেমের প্রধান তিনটি অংশ কী কী?",
+        answer: "ইনপুট, প্রসেস এবং আউটপুট",
+        options: [
+            "মনিটর, মাউস এবং কীবোর্ড",
+            "ইনপুট, প্রসেস এবং আউটপুট",
+            "হার্ডওয়্যার, সফটওয়্যার এবং ইউজার",
+            "ডাটা, তথ্য এবং কোড"
         ]
     },
     {
-        numb:3,
-        qustions:`What does PHP stand for?`,
-        answer:`Hypertext processor`,
-        options:[
-            "Hypertext processor",
-            "Hypertext programing",
-            "Hypertext pre programing",
-            "Hypertext pre procrssor"
+        numb: 2,
+        qustions: "SDLC এর পূর্ণরূপ কী?",
+        answer: "Software Development Life Cycle",
+        options: [
+            "System Design Life Cycle",
+            "Software Development Life Cycle",
+            "System Development Logic Cycle",
+            "Software Data Life Cycle"
         ]
     },
     {
-        numb:4,
-        qustions:`What does SQL stand for?`,
-        answer:`Structure query language`,
-        options:[
-            "Structure qustion language",
-            "Structure query language",
-            "Statement qustion language",
-            "Structured query language"
+        numb: 3,
+        qustions: "সিস্টেম অ্যানালাইসিসের প্রধান কাজ কী?",
+        answer: "বর্তমান সমস্যার সমাধান এবং প্রয়োজনীয়তা বোঝা",
+        options: [
+            "সরাসরি কোড লেখা শুরু করা",
+            "মার্কেটে সফটওয়্যার বিক্রি করা",
+            "বর্তমান সমস্যার সমাধান এবং প্রয়োজনীয়তা বোঝা",
+            "কম্পিউটার মেরামত করা"
         ]
     },
     {
-        numb:5,
-        qustions:`What does XML stand for?`,
-        answer:`Extensible markup language`,
-        options:[
-            "Extensible markup language",
-            "Extensible multiple language",
-            "Extra multi-program language",
-            "Example many language"
+        numb: 4,
+        qustions: "সিস্টেমের প্রয়োজনীয়তা (Requirements) জানার জন্য কোনটি জনপ্রিয় পদ্ধতি?",
+        answer: "ইন্টারভিউ (Interview)",
+        options: [
+            "অনুমান করা",
+            "গেম খেলা",
+            "ইন্টারভিউ (Interview)",
+            "গান শোনা"
         ]
     },
-]
-
+    {
+        numb: 5,
+        qustions: "নিচের কোনটি একটি সিস্টেমের উদাহরণ হতে পারে?",
+        answer: "একটি লাইব্রেরি ম্যানেজমেন্ট সিস্টেম",
+        options: [
+            "শুধু একটি মাউস",
+            "একটি ফাঁকা ফোল্ডার",
+            "একটি লাইব্রেরি ম্যানেজমেন্ট সিস্টেম",
+            "শুধু একটি কিবোর্ড"
+        ]
+    }
+];
