@@ -1,82 +1,257 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISAD Professional Quiz</title>
+    <title>ISAD Quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <!-- Animated Background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ================= WELCOME ================= -->
     <div class="MyQuizApp">
-        <div class="img">
-            <img src="head.png.svg" alt="ISAD Quiz">
-        </div>
-        <div class="text1">
-            <h3>ISAD Exam Portal</h3>
-            <p>সিস্টেম অ্যানালাইসিস এবং ডিজাইনের ওপর আপনার দক্ষতা যাচাই করুন। এই কুইজটি আপনাকে প্রফেশনাল লেভেলের কনসেপ্ট বুঝতে সাহায্য করবে।</p>
-            <h3>Developed by:</h3>
-            <p>Name: Nusrat Jahan </p>
-            <p>Id: 241031009 </p>
-        </div>
-        <div class="myBtn">
-            <button>Start Quiz</button>
-        </div>
-    </div>
 
-    <div class="RulesBox">
-         <div class="RulesTittle">পরীক্ষার নিয়মাবলী</div>
-         <div class="RulesList">
-            <ol>
-                <li>প্রতিটি প্রশ্নের জন্য আপনি <span style="color: #007bff; font-weight: bold;">১৫ সেকেন্ড</span> সময় পাবেন।</li>
-                <li>একবার উত্তর সিলেক্ট করলে তা পরিবর্তন করা যাবে না।</li>
-                <li>সময় শেষ হয়ে গেলে কোনো অপশন সিলেক্ট করা যাবে না।</li>
-                <li>পরীক্ষা চলাকালীন ট্যাব বা উইন্ডো ক্লোজ করবেন না।</li>
-                <li>সঠিক উত্তরের ওপর ভিত্তি করে আপনার স্কোর প্রদান করা হবে।</li>
-            </ol>
-         </div>
-         <div class="buttons">
-            <button class="ExitButton">Exit Quiz</button>
-            <button class="ContinueButton">Continue</button>
-         </div>
-    </div>
+        <div class="heroImage">
+            <div class="heroOverlay"></div>
 
-    <div class="Questions">
-        <header class="QuestionHeader">
-            <div class="title">ISAD Quiz</div>
-            <div class="TimeCount">
-                <div class="Time">Time Left</div>
-                <div class="Seconds">15</div>
+            <img src="winner.png" alt="Quiz">
+
+            <div class="heroContent">
+                <div class="badge">✨ ISAD QUIZ</div>
+                <h1>Test Your Knowledge</h1>
+                <p>Information System Analysis & Design</p>
             </div>
-            <div class="time-lines"></div>
-        </header> 
-        <div class="Section">
-            <div class="text"></div>
-            <div class="MyOptions">
-                </div>
         </div>
-    
-        <footer>
-            <div class="total_que"></div>
-            <button class="nextBtn">Next Question</button>
-        </footer>
+
+        <div class="welcomeContent">
+
+            <div class="welcomeStats">
+                <div>
+                    <strong>05</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div>
+                    <strong>15s</strong>
+                    <span>Per Question</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Challenge</span>
+                </div>
+            </div>
+
+            <div class="welcomeText">
+                <h2>প্রস্তুত তো? 🚀</h2>
+                <p>
+                    আপনার ISAD বিষয়ক জ্ঞান যাচাই করুন এবং
+                    দেখুন আপনি কতটা ভালো করতে পারেন।
+                </p>
+            </div>
+
+            <div class="myBtn">
+                <button>
+                    <span>Start Quiz</span>
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+
+        </div>
     </div>
 
+
+    <!-- ================= RULES ================= -->
+    <div class="RulesBox">
+
+        <div class="rulesHeader">
+            <div class="rulesIcon">📋</div>
+
+            <div>
+                <span>Before You Start</span>
+                <h2>পরীক্ষার নিয়মাবলী</h2>
+            </div>
+        </div>
+
+        <div class="RulesList">
+
+            <div class="rule">
+                <div class="ruleNumber">01</div>
+                <p>
+                    প্রতিটি প্রশ্নের জন্য
+                    <strong>১৫ সেকেন্ড</strong> সময় পাবেন।
+                </p>
+            </div>
+
+            <div class="rule">
+                <div class="ruleNumber">02</div>
+                <p>
+                    একবার উত্তর সিলেক্ট করলে
+                    তা পরিবর্তন করা যাবে না।
+                </p>
+            </div>
+
+            <div class="rule">
+                <div class="ruleNumber">03</div>
+                <p>
+                    সময় শেষ হলে কোনো অপশন
+                    সিলেক্ট করা যাবে না।
+                </p>
+            </div>
+
+            <div class="rule">
+                <div class="ruleNumber">04</div>
+                <p>
+                    পরীক্ষা চলাকালীন ট্যাব বা
+                    উইন্ডো বন্ধ করবেন না।
+                </p>
+            </div>
+
+            <div class="rule">
+                <div class="ruleNumber">05</div>
+                <p>
+                    সঠিক উত্তরের ভিত্তিতে
+                    আপনার স্কোর প্রদান করা হবে।
+                </p>
+            </div>
+
+        </div>
+
+        <div class="rulesButtons">
+            <button class="ExitButton">
+                <span>←</span> Exit
+            </button>
+
+            <button class="ContinueButton">
+                Continue <span>→</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- ================= QUIZ ================= -->
+    <div class="Questions">
+
+        <header class="QuestionHeader">
+
+            <div class="quizTitle">
+                <div class="quizLogo">Q</div>
+
+                <div>
+                    <small>ISAD</small>
+                    <h3>Quiz Challenge</h3>
+                </div>
+            </div>
+
+            <div class="TimeCount">
+                <div class="clock">◷</div>
+
+                <div>
+                    <small>TIME LEFT</small>
+                    <strong class="Seconds">15</strong>
+                </div>
+            </div>
+
+            <div class="time-lines"></div>
+
+        </header>
+
+
+        <div class="quizBody">
+
+            <div class="questionTop">
+
+                <div class="questionBadge">
+                    QUESTION
+                </div>
+
+                <div class="total_que"></div>
+
+            </div>
+
+            <div class="Section">
+
+                <div class="text"></div>
+
+                <div class="MyOptions"></div>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+
+            <div class="footerInfo">
+                <span class="dot"></span>
+                Choose the correct answer
+            </div>
+
+            <button class="nextBtn">
+                Next Question
+                <span>→</span>
+            </button>
+
+        </footer>
+
+    </div>
+
+
+    <!-- ================= RESULT ================= -->
     <div class="result_box">
+
+        <div class="resultGlow"></div>
+
         <div class="resultImg">
             <img src="winner.png" alt="Result">
         </div>
-        <div class="complete_text">আপনি পরীক্ষা সম্পন্ন করেছেন!</div>
-        <div class="score_text">
-            </div>
-        <div class="buttons">
-            <button class="restart1">Replay</button>
-            <button class="quit">Quit Quiz</button>
+
+        <div class="resultBadge">
+            🎉 QUIZ COMPLETED
         </div>
+
+        <div class="complete_text">
+            আপনি পরীক্ষা সম্পন্ন করেছেন!
+        </div>
+
+        <div class="score_text"></div>
+
+        <div class="resultButtons">
+
+            <button class="restart1">
+                <span>↻</span>
+                Replay
+            </button>
+
+            <button class="quit">
+                Quit Quiz
+            </button>
+
+        </div>
+
     </div>
+
 
     <script src="js/qustions.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>
+```
